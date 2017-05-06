@@ -1,5 +1,7 @@
 # Botkit Starter Kit for Slack Bots
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Charlotteis/james.svg)](https://greenkeeper.io/)
+
 This repo contains everything you need to get started building a bot with Botkit and Botkit Studio!
 
 [Botkit Studio](https://studio.botkit.ai/) is a set of tools that adds capabilities
