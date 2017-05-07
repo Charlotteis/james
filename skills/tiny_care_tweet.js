@@ -34,8 +34,18 @@ module.exports = function(controller) {
   })
   
   function isDirectTweet (tweet) {
-    if (!tweet.retweeted_status && (tweet.in_reply_to_user_id === null) && (tweet.is_quote_status === false)) {
-      return true
-    }
+    return (isNotRetweet(tweet) && isNotReply(tweet) && isNotQuoteTweet(tweet))
+  }
+  
+  function isNotRetweet (tweet) {
+    return !tweet.retweeted_status
+  }
+  
+  function isNotReply (tweet) {
+    return (tweet.in_reply_to_user_id === null)
+  }
+  
+  function isNotQuoteTweet (tweet) {
+    return (tweet.is_quote_status === false)
   }
 }
