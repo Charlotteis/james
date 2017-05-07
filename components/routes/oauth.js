@@ -33,7 +33,6 @@ module.exports = function(webserver, controller) {
                 // to call auth.test to make sure the token is valid
                 // but also so that we reliably have the team_id field!
                 slackapi.api.auth.test({token: auth.access_token}, function(err, identity) {
-                  console.log(auth.access_token)
 
                     if (err) {
                         debug('Error fetching user identity', err);
