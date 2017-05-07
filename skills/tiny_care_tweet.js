@@ -1,3 +1,7 @@
+// Tiny Care Bot!
+// Using the Twitter Stream API, listen to every direct tweet @tinycarebot makes
+// Send each cool tweet to the #tinycare channel!
+
 module.exports = function(controller) {
   const Twitter = require('twitter')
   const client = new Twitter({
