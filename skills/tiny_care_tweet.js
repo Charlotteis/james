@@ -1,5 +1,4 @@
 module.exports = function(controller) {
-  const Request = require('request')
   const Twitter = require('twitter')
   const client = new Twitter({
     consumer_key: process.env.consumer_key,
